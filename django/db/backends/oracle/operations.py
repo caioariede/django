@@ -23,6 +23,7 @@ class DatabaseOperations(BaseDatabaseOperations):
         'BigIntegerField': (-9999999999999999999, 9999999999999999999),
         'PositiveSmallIntegerField': (0, 99999999999),
         'PositiveIntegerField': (0, 99999999999),
+        'PositiveBigIntegerField': (0, 9999999999999999999),
     }
     set_operators = {**BaseDatabaseOperations.set_operators, 'difference': 'MINUS'}
 
